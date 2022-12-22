@@ -110,6 +110,7 @@ DavisWeatherLinkLive.prototype = {
     this.airQualityService
       .getCharacteristic(Characteristic.PM10Density)
       .on("get", this.getPM10.bind(this));
+    services.push(this.airQualityService);
 
     return services;
   },
