@@ -1,6 +1,6 @@
 {
   "name": "@jontg/homebridge-davisweatherlinklive",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Homebridge plugin that allows you to integrate your Davis WeatherLink Live station API.",
   "main": "index.js",
   "scripts": {
