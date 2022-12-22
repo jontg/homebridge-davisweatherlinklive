@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-davisweatherlinklive",
+  "name": "@jontg/homebridge-davisweatherlinklive",
   "version": "1.0.1",
   "description": "Homebridge plugin that allows you to integrate your Davis WeatherLink Live station API.",
   "main": "index.js",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pmoon00/homebridge-davisweatherlinklive.git"
+    "url": "https://github.com/jontg/homebridge-davisweatherlinklive.git"
   },
   "dependencies": {
     "request": "^2.87.0"
