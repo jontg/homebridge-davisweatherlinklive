@@ -30,16 +30,16 @@ function computeAqiFromPm(averagePM25, averagePM10) {
     if (averagePM25 === 0 && averagePM10 === 0) {
       return Characteristic.AirQuality.UNKNOWN;
     }
-    if (averagePM25 <= this.limits25[0] && averagePM10 <= this.limits10[0]) {
+    if (averagePM25 <= limits25[0] && averagePM10 <= limits10[0]) {
       return Characteristic.AirQuality.EXCELLENT;
     }
-    if (averagePM25 <= this.limits25[1] && averagePM10 <= this.limits10[1]) {
+    if (averagePM25 <= limits25[1] && averagePM10 <= limits10[1]) {
       return Characteristic.AirQuality.GOOD;
     }
-    if (averagePM25 <= this.limits25[2] && averagePM10 <= this.limits10[2]) {
+    if (averagePM25 <= limits25[2] && averagePM10 <= limits10[2]) {
       return Characteristic.AirQuality.FAIR;
     }
-    if (averagePM25 <= this.limits25[3] && averagePM10 <= this.limits10[3]) {
+    if (averagePM25 <= limits25[3] && averagePM10 <= limits10[3]) {
       return Characteristic.AirQuality.INFERIOR;
     }
     return Characteristic.AirQuality.POOR;
